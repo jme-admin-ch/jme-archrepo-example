@@ -1,0 +1,75 @@
+archrepo:
+  openapi-base-url: http://localhost:8080/jme-archrepo-service/swagger-ui/index.html?url=/jme-archrepo-service/api/openapi/
+  update-schedule: "-"
+  documentation-generator:
+    update-schedule: "-"
+    confluence:
+      url: "https://your-confluence-instance.example.com"
+      username: "your-confluence-user"
+      password: "your-confluence-password"
+      space-key: "YOUR-SPACE-KEY"
+      root-page-id: "123456789"
+      mock-confluence-client: true # because of this all the properties above are not used, but you can use them to test the confluence client in your local environment, if Confluence is reachable from your local environment. If you want to test the confluence client, set this property to false and provide the correct values for the properties above.
+  api:
+    secret: "{noop}secret"
+
+deploymentlog:
+  username: "read"
+  password: "your-deploymentlog-password"
+  url: "https://your-deploymentlog-service.example.com"
+
+messages:
+  message-contract-service-uri: "https://your-message-contract-service.example.com/api/contracts"
+  repositories:
+    - uri: "https://github.com/jeap-admin-ch/jeap-message-type-registry.git"
+      type: "GITHUB"
+    - uri: "https://github.com/jme-admin-ch/jme-message-type-registry.git"
+      type: "GITHUB"
+      # If access is protected, you can provide the GitHub App credentials here
+      #parameters:
+      #  GITHUB_APP_ID: "dummy"
+      #  GITHUB_PRIVATE_KEY_PEM: "dummy"
+
+reactionobserverservice:
+  url: https://your-reaction-observer-service.example.com
+  username: read
+  password: "your-reactionobserverservice-password"
+
+system-component-importer:
+  org-prefixes:
+    - "YOUR-ORG-"
+
+pactbroker:
+  url: "https://your-pactbroker.example.com"
+
+jeap:
+  security:
+    oauth2:
+      resourceserver:
+        authorization-server:
+          issuer: "http://localhost:8081/default-oauth-mock-server"
+          jwk-set-uri: "${jeap.security.oauth2.resourceserver.authorization-server.issuer}/.well-known/jwks.json"
+
+#Store the client secret plain text for dev like environments
+springdoc:
+  swagger-ui:
+    oauth:
+      client-secret: secret
+
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: org.postgresql.Driver
+    url: "jdbc:postgresql://localhost:5432/jme-archrepo-db-local"
+    username: archrepo
+    password: secret
+    hikari:
+      schema: ${spring.jpa.properties.hibernate.default_schema}
+
+logging:
+  level:
+    ch.admin.bit.jeap.archrepo: DEBUG
+    ch.admin.bit.jeap.security: DEBUG
+
+archrepo-config:
+  environment: dev

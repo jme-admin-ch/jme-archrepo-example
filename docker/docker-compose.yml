@@ -1,0 +1,11 @@
+---
+version: '3'
+services:
+  jme-archrepo-db-local:
+    image: postgres:17.7
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=archrepo
+      - POSTGRES_PASSWORD=secret
+      - POSTGRES_DB=jme-archrepo-db-local

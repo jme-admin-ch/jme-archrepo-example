@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: jme-archrepo-service
+
+server:
+  servlet:
+    context-path: /${spring.application.name}
+
+# Set a default client-ID to use
+springdoc:
+  swagger-ui:
+    oauth:
+      client-id: "archRepoService"
+    try-it-out-enabled: true
+
+jeap:
+  security:
+    oauth2:
+      resourceserver:
+        system-name: "jme"
+  swagger:
+    status: OPEN
+  web:
+    tls:
+      enabled: false

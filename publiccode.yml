@@ -1,0 +1,45 @@
+publiccodeYmlVersion: 0.5.0
+name: jme-archrepo-example
+applicationSuite: JME
+softwareVersion: 1.0.0
+releaseDate: 2026-06-30
+url: "https://github.com/jme-admin-ch/jme-archrepo-example.git"
+landingURL: "https://github.com/jme-admin-ch/jme"
+platforms:
+  - web
+categories:
+  - application-development
+developmentStatus: stable
+softwareType: standalone/backend
+organisation:
+  uri: https://ld.admin.ch/office/V.1.7
+  name: Federal Office of Information Technology, Systems and Telecommunication
+description:
+  en:
+    localisedName: jme-archrepo-example
+    shortDescription: Example project demonstrating how to deploy the jEAP Architecture Repository.
+    longDescription: >
+      The jEAP Architecture Repository (archrepo) is a service for storing and displaying
+      architecture documentation of software systems, including database schemas, OpenAPI
+      specifications, and system relationships. It is delivered as a jEAP library
+      (jeap-archrepo-web) that development teams instantiate per environment.
+      This repository provides an example of how to set up and configure the
+      Architecture Repository service for local development.
+      It contains the following modules:
+      * jme-archrepo-service: An instance of the Architecture Repository service
+      * jme-archrepo-auth-scs: An instance of the OAuth mock server to access the Architecture Repository
+    features:
+      - Demonstrates instantiation and configuration of the jEAP Architecture Repository
+      - Includes OAuth mock server for authentication
+      - Provides Docker Compose setup for local development
+legal:
+  license: Apache-2.0
+maintenance:
+  type: internal
+  contacts:
+    - name: Federal Office of Information Technology, Systems and Telecommunication FOITT
+      email: jeap-community@bit.admin.ch
+localisation:
+  localisationReady: false
+  availableLanguages:
+    - en

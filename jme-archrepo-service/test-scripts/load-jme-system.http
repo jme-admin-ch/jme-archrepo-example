@@ -1,0 +1,23 @@
+### Load systems
+< {%
+    request.variables.set("systems", [
+        {"name": "JME", "description": "jEAP Examples", "confluenceLink": "https://confluence.bit.admin.ch/display/JEAP", "teamName": "jEAP"},
+    ])
+%}
+
+POST {{baseUrl}}/api/management/system
+Content-Type: application/json
+Authorization: Basic {{authorizationToken}}
+
+{
+  "name": "{{$.systems..name}}",
+  "description": "{{$.systems..description}}",
+  "confluenceLink": "{{$.systems..confluenceLink}}",
+  "teamName": "{{$.systems..teamName}}"
+}
+
+> {%
+    client.test("Request executed successfully", function () {
+        client.assert(response.status === 200, "Response status is not 201");
+    });
+%}

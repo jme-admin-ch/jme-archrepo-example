@@ -1,0 +1,47 @@
+spring:
+  application:
+    name: "jme-archrepo-auth-scs"
+
+server:
+  servlet:
+    context-path: /${spring.application.name}
+
+jeap:
+  monitor:
+    prometheus:
+      user: "prometheus"
+      password: "{noop}secret"
+  web:
+    tls:
+      enabled: false
+
+oauth-mock-data:
+  clients:
+    - client-id: "archRepoService"
+      client-secret: "{noop}secret"
+      registered-redirect-uri:
+        - "http://localhost:8080/jme-archrepo-service/swagger-ui/oauth2-redirect.html"
+
+      userroles:
+        - "jme_@database-schema_#write"
+        - "jme_@external-database-schema_#read"
+        - "jme_@openapidoc_#write"
+
+    # Client for JME examples uploading DB schemas and OpenAPI documentations to the archrepo
+    - client-id: "jme-archrepo-client"
+      client-secret: "{noop}secret"
+      context: "SYS"
+      userroles:
+        - "jme_@database-schema_#write"
+        - "jme_@openapidoc_#write"
+
+  users:
+    - id: "user"
+      given-name: "Maxine"
+      family-name: "Muster"
+      locale: "DE"
+      preferred-username: "12345"
+      userroles:
+        - "jme_@database-schema_#write"
+        - "jme_@external-database-schema_#read"
+        - "jme_@openapidoc_#write"
