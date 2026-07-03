@@ -2,7 +2,7 @@
 version: '3'
 services:
   jme-archrepo-db-local:
-    image: postgres:17.10
+    image: postgres:18.4
     ports:
       - "5432:5432"
     environment:
