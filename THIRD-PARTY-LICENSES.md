@@ -48,6 +48,8 @@ Apache License Version 2.0
  * ch.admin.bit.jeap:jeap-spring-boot-tx - [ch.admin.bit.jeap:jeap-spring-boot-tx](https://github.com/jeap-admin-ch/jeap-spring-boot-starters/tree/main/jeap-spring-boot-tx)
  * ch.admin.bit.jeap:jeap-spring-boot-web-config-starter - [ch.admin.bit.jeap:jeap-spring-boot-web-config-starter](https://github.com/jeap-admin-ch/jeap-spring-boot-starters/tree/main/jeap-spring-boot-web-config-starter)
  * ch.admin.bit.jeap.jme:jme-spring-boot-integration-test - [ch.admin.bit.jeap.jme:jme-spring-boot-integration-test](https://github.com/jme-admin-ch/jme-integration-test/tree/main/jme-spring-boot-integration-test)
+ * libGDX jnigen library - [com.badlogicgames.jnigen:jnigen-commons](https://github.com/libgdx/gdx-jnigen)
+ * libGDX jnigen library - [com.badlogicgames.jnigen:jnigen-loader](https://github.com/libgdx/gdx-jnigen)
  * ClassMate - [com.fasterxml:classmate](https://github.com/FasterXML/java-classmate)
  * Jackson-annotations - [com.fasterxml.jackson.core:jackson-annotations](https://github.com/FasterXML/jackson)
  * Jackson-core - [com.fasterxml.jackson.core:jackson-core](https://github.com/FasterXML/jackson-core)
@@ -174,8 +176,8 @@ Apache License Version 2.0
  * Apache HttpClient Mime - [org.apache.httpcomponents:httpmime](http://hc.apache.org/httpcomponents-client-ga)
  * Apache HttpClient - [org.apache.httpcomponents.client5:httpclient5](https://hc.apache.org/httpcomponents-client-5.5.x/5.6.1/httpclient5/)
  * Apache HttpClient Fluent - [org.apache.httpcomponents.client5:httpclient5-fluent](https://hc.apache.org/httpcomponents-client-5.5.x/5.6.1/httpclient5-fluent/)
- * Apache HttpComponents Core HTTP/1.1 - [org.apache.httpcomponents.core5:httpcore5](https://hc.apache.org/httpcomponents-core-5.4.x/5.4.2/httpcore5/)
- * Apache HttpComponents Core HTTP/2 - [org.apache.httpcomponents.core5:httpcore5-h2](https://hc.apache.org/httpcomponents-core-5.4.x/5.4.2/httpcore5-h2/)
+ * Apache HttpComponents Core HTTP/1.1 - [org.apache.httpcomponents.core5:httpcore5](https://hc.apache.org/httpcomponents-core-5.4.x/5.4.3/httpcore5/)
+ * Apache HttpComponents Core HTTP/2 - [org.apache.httpcomponents.core5:httpcore5-h2](https://hc.apache.org/httpcomponents-core-5.4.x/5.4.3/httpcore5-h2/)
  * Apache Log4j API - [org.apache.logging.log4j:log4j-api](https://logging.apache.org/log4j/2.x/)
  * Log4j API to SLF4J Adapter - [org.apache.logging.log4j:log4j-to-slf4j](https://logging.apache.org/log4j/2.x/)
  * Apache Mina SSHD :: OSGi - [org.apache.sshd:sshd-osgi](https://www.apache.org/sshd/sshd-osgi/)
@@ -460,6 +462,9 @@ MIT License
  * JUL to SLF4J bridge - [org.slf4j:jul-to-slf4j](http://www.slf4j.org)
  * SLF4J API Module - [org.slf4j:slf4j-api](http://www.slf4j.org)
  * webjars-locator-lite - [org.webjars:webjars-locator-lite](https://webjars.org)
+ * Lua 5.4 - [party.iroiro.luajava:lua54](https://github.com/gudzpoz/luajava)
+ * Lua 5.4 - [party.iroiro.luajava:lua54-platform](https://github.com/gudzpoz/luajava)
+ * LuaJava - [party.iroiro.luajava:luajava](https://github.com/gudzpoz/luajava)
 
 Mozilla Public License, Version 2.0
 -------------------------------
