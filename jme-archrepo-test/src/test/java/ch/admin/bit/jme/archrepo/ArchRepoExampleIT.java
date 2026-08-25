@@ -19,6 +19,9 @@ class ArchRepoExampleIT extends BootServiceSpringIntegrationTestBase {
     private static final String AUTH_BASE_URL = "http://localhost:8081/default-oauth-mock-server";
     private static final String SERVICE_BASE_URL = "http://localhost:8080/jme-archrepo-service";
     private static final String TEST_SYSTEM_NAME = "JME-IT-" + LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss"));
+    // Must match archrepo.api.username (application.yml) / archrepo.api.secret (application-local.yml)
+    private static final String API_USER = "jme-archrepo-admin";
+    private static final String API_SECRET = "secret";
 
     @BeforeAll
     static void startServices() throws Exception {
@@ -30,7 +33,7 @@ class ArchRepoExampleIT extends BootServiceSpringIntegrationTestBase {
     void registerSystemAndVerifyModel() {
         given()
                 .baseUri(SERVICE_BASE_URL)
-                .auth().preemptive().basic("api", "secret")
+                .auth().preemptive().basic(API_USER, API_SECRET)
                 .contentType(ContentType.JSON)
                 .body("""
                         {
@@ -47,7 +50,7 @@ class ArchRepoExampleIT extends BootServiceSpringIntegrationTestBase {
 
         String model = given()
                 .baseUri(SERVICE_BASE_URL)
-                .auth().preemptive().basic("api", "secret")
+                .auth().preemptive().basic(API_USER, API_SECRET)
                 .when()
                 .get("/api/model")
                 .then()
@@ -61,7 +64,7 @@ class ArchRepoExampleIT extends BootServiceSpringIntegrationTestBase {
     void modelEndpointsShouldReturnSuccessfully() {
         given()
                 .baseUri(SERVICE_BASE_URL)
-                .auth().preemptive().basic("api", "secret")
+                .auth().preemptive().basic(API_USER, API_SECRET)
                 .when()
                 .get("/api/model/rest-api-relation-without-pact")
                 .then()
@@ -69,7 +72,7 @@ class ArchRepoExampleIT extends BootServiceSpringIntegrationTestBase {
 
         given()
                 .baseUri(SERVICE_BASE_URL)
-                .auth().preemptive().basic("api", "secret")
+                .auth().preemptive().basic(API_USER, API_SECRET)
                 .when()
                 .get("/api/model/system-components-without-open-api-spec")
                 .then()

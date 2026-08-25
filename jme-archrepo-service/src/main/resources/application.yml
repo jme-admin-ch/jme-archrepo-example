@@ -23,3 +23,7 @@ jeap:
   web:
     tls:
       enabled: false
+
+archrepo:
+  api:
+    username: "jme-archrepo-admin"
