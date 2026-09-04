@@ -59,6 +59,9 @@ Apache License Version 2.0
  * Java UUID Generator - [com.fasterxml.uuid:java-uuid-generator](https://github.com/cowtowncoder/java-uuid-generator)
  * colormath - [com.github.ajalt:colormath](https://github.com/ajalt/colormath)
  * mordant - [com.github.ajalt:mordant](https://github.com/ajalt/mordant)
+ * docker-java-api - [com.github.docker-java:docker-java-api](https://github.com/docker-java/docker-java)
+ * docker-java-transport - [com.github.docker-java:docker-java-transport](https://github.com/docker-java/docker-java)
+ * docker-java-transport-zerodep - [com.github.docker-java:docker-java-transport-zerodep](https://github.com/docker-java/docker-java)
  * JCIP Annotations under Apache License - [com.github.stephenc.jcip:jcip-annotations](http://stephenc.github.com/jcip-annotations)
  * proto-google-common-protos - [com.google.api.grpc:proto-google-common-protos](https://github.com/googleapis/sdk-platform-java)
  * FindBugs-jsr305 - [com.google.code.findbugs:jsr305](http://findbugs.sourceforge.net/)
@@ -154,6 +157,7 @@ Apache License Version 2.0
  * Jakarta Validation API - [jakarta.validation:jakarta.validation-api](https://beanvalidation.org)
  * Byte Buddy (without dependencies) - [net.bytebuddy:byte-buddy](https://bytebuddy.net/byte-buddy)
  * Byte Buddy agent - [net.bytebuddy:byte-buddy-agent](https://bytebuddy.net/byte-buddy-agent)
+ * Java Native Access - [net.java.dev.jna:jna](https://github.com/java-native-access/jna)
  * net.javacrumbs.shedlock:shedlock-core - [net.javacrumbs.shedlock:shedlock-core](https://github.com/lukas-krecan/ShedLock/shedlock-core)
  * net.javacrumbs.shedlock:shedlock-provider-jdbc-template - [net.javacrumbs.shedlock:shedlock-provider-jdbc-template](https://github.com/lukas-krecan/ShedLock/providers/jdbc/shedlock-provider-jdbc-template)
  * net.javacrumbs.shedlock:shedlock-spring - [net.javacrumbs.shedlock:shedlock-spring](https://github.com/lukas-krecan/ShedLock/spring/shedlock-spring)
@@ -282,6 +286,7 @@ Apache License Version 2.0
  * spring-boot-starter-webmvc - [org.springframework.boot:spring-boot-starter-webmvc](https://spring.io/projects/spring-boot)
  * spring-boot-test - [org.springframework.boot:spring-boot-test](https://spring.io/projects/spring-boot)
  * spring-boot-test-autoconfigure - [org.springframework.boot:spring-boot-test-autoconfigure](https://spring.io/projects/spring-boot)
+ * spring-boot-testcontainers - [org.springframework.boot:spring-boot-testcontainers](https://spring.io/projects/spring-boot)
  * spring-boot-thymeleaf - [org.springframework.boot:spring-boot-thymeleaf](https://spring.io/projects/spring-boot)
  * spring-boot-tomcat - [org.springframework.boot:spring-boot-tomcat](https://spring.io/projects/spring-boot)
  * spring-boot-transaction - [org.springframework.boot:spring-boot-transaction](https://spring.io/projects/spring-boot)
@@ -420,11 +425,6 @@ Eclipse Public License v2.0
  * JUnit Platform Commons - [org.junit.platform:junit-platform-commons](https://junit.org/)
  * JUnit Platform Engine API - [org.junit.platform:junit-platform-engine](https://junit.org/)
 
-Eclipse Public License, Version 1.0
--------------------------------
-
- * H2 Database Engine - [com.h2database:h2](https://h2database.com)
-
 GNU General Public License, version 2 (GPL2), with the classpath exception
 -------------------------------
 
@@ -443,6 +443,11 @@ LGPL-2.1-only
  * Logback Classic Module - [ch.qos.logback:logback-classic](http://logback.qos.ch/logback-classic)
  * Logback Core Module - [ch.qos.logback:logback-core](http://logback.qos.ch/logback-core)
 
+LGPL-2.1-or-later
+-------------------------------
+
+ * Java Native Access - [net.java.dev.jna:jna](https://github.com/java-native-access/jna)
+
 MIT License
 -------------------------------
 
@@ -457,17 +462,17 @@ MIT License
  * mockito-junit-jupiter - [org.mockito:mockito-junit-jupiter](https://github.com/mockito/mockito)
  * Project Lombok - [org.projectlombok:lombok](https://projectlombok.org)
  * reactive-streams - [org.reactivestreams:reactive-streams](http://www.reactive-streams.org/)
+ * Duct Tape - [org.rnorth.duct-tape:duct-tape](https://github.com/rnorth/duct-tape)
  * JUL to SLF4J bridge - [org.slf4j:jul-to-slf4j](http://www.slf4j.org)
  * SLF4J API Module - [org.slf4j:slf4j-api](http://www.slf4j.org)
+ * Testcontainers Core - [org.testcontainers:testcontainers](https://java.testcontainers.org)
+ * Testcontainers :: Database-Commons - [org.testcontainers:testcontainers-database-commons](https://java.testcontainers.org)
+ * Testcontainers :: JDBC - [org.testcontainers:testcontainers-jdbc](https://java.testcontainers.org)
+ * Testcontainers :: JDBC :: PostgreSQL - [org.testcontainers:testcontainers-postgresql](https://java.testcontainers.org)
  * webjars-locator-lite - [org.webjars:webjars-locator-lite](https://webjars.org)
  * Lua 5.4 - [party.iroiro.luajava:lua54](https://github.com/gudzpoz/luajava)
  * Lua 5.4 - [party.iroiro.luajava:lua54-platform](https://github.com/gudzpoz/luajava)
  * LuaJava - [party.iroiro.luajava:luajava](https://github.com/gudzpoz/luajava)
-
-Mozilla Public License, Version 2.0
--------------------------------
-
- * H2 Database Engine - [com.h2database:h2](https://h2database.com)
 
 Public Domain
 -------------------------------
