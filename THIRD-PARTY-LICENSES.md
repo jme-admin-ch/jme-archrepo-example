@@ -79,6 +79,7 @@ Apache License Version 2.0
  * Nimbus Content Type - [com.nimbusds:content-type](https://bitbucket.org/connect2id/nimbus-content-type)
  * Nimbus LangTag - [com.nimbusds:lang-tag](https://bitbucket.org/connect2id/nimbus-language-tags)
  * Nimbus JOSE+JWT - [com.nimbusds:nimbus-jose-jwt](https://bitbucket.org/connect2id/nimbus-jose-jwt)
+ * Nimbus JOSE+JWT - [com.nimbusds:nimbus-jose-jwt](https://bitbucket.org/connect2id/nimbus-jose-jwt)
  * OAuth 2.0 SDK with OpenID Connect and Federation extensions - [com.nimbusds:oauth2-oidc-sdk](https://bitbucket.org/connect2id/oauth-2.0-sdk-with-openid-connect-extensions)
  * okhttp - [com.squareup.okhttp3:okhttp-jvm](https://square.github.io/okhttp/)
  * okio - [com.squareup.okio:okio-jvm](https://github.com/square/okio/)
