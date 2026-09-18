@@ -1,7 +1,7 @@
 publiccodeYmlVersion: 0.5.0
 name: jme-archrepo-example
 applicationSuite: JME
-softwareVersion: 12.2.1
+softwareVersion: 12.3.0
 releaseDate: 2026-09-18
 url: "https://github.com/jme-admin-ch/jme-archrepo-example.git"
 landingURL: "https://github.com/jme-admin-ch/jme"
