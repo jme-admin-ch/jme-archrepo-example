@@ -26,6 +26,8 @@ oauth-mock-data:
         - "jme_@database-schema_#write"
         - "jme_@external-database-schema_#read"
         - "jme_@openapidoc_#write"
+      audience:
+        - "https://resources.jme.admin.ch/jme/jme-archrepo-service"
 
     # Client for JME examples uploading DB schemas and OpenAPI documentations to the archrepo
     - client-id: "jme-archrepo-client"
@@ -34,6 +36,8 @@ oauth-mock-data:
       userroles:
         - "jme_@database-schema_#write"
         - "jme_@openapidoc_#write"
+      audience:
+        - "https://resources.jme.admin.ch/jme/jme-archrepo-service"
 
   users:
     - id: "user"
@@ -45,3 +49,6 @@ oauth-mock-data:
         - "jme_@database-schema_#write"
         - "jme_@external-database-schema_#read"
         - "jme_@openapidoc_#write"
+
+mockserver:
+  introspection-endpoint-audience-check: "on"

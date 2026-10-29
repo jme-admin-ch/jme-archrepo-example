@@ -17,6 +17,8 @@ jeap:
   security:
     oauth2:
       resourceserver:
+        resource-id: "https://resources.jme.admin.ch/jme/jme-archrepo-service"
+        strict-audience-validation: "on"
         system-name: "jme"
   swagger:
     status: OPEN

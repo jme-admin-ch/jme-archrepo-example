@@ -14,3 +14,5 @@ oauth-mock-data:
       userroles:
         - "jme_@database-schema_#write"
         - "jme_@openapidoc_#write"
+      audience:
+        - "https://resources.jme.admin.ch/jme/jme-archrepo-service"
