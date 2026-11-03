@@ -13,7 +13,7 @@
     <groupId>ch.admin.bit.jeap</groupId> <!-- GroupId is necessary for RHOS sca-check-->
     <artifactId>jme-archrepo-example</artifactId>
     <name>JME Architecture Repository Example</name>
-    <version>17.2.2-SNAPSHOT</version>
+    <version>18.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <properties>
