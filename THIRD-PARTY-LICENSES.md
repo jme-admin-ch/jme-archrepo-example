@@ -450,7 +450,6 @@ MIT License
 
  * Java SemVer - [com.github.zafarkhaja:java-semver](https://github.com/zafarkhaja/jsemver)
  * semver4j - [com.vdurmont:semver4j](https://github.com/vdurmont/semver4j)
- * ClassGraph - [io.github.classgraph:classgraph](https://github.com/classgraph/classgraph)
  * toml4j - [io.hotmoka:toml4j](http://moandjiezana.com/toml/toml4j)
  * core - [io.pact.plugin.driver:core](https://github.com/pact-foundation/pact-plugins)
  * Logstash Logback Encoder - [net.logstash.logback:logstash-logback-encoder](https://github.com/logfellow/logstash-logback-encoder)

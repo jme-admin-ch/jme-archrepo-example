@@ -13,13 +13,20 @@ archrepo:
   api:
     secret: "{noop}secret"
 
-deploymentlog:
-  username: "read"
-  password: "your-deploymentlog-password"
-  url: "https://your-deploymentlog-service.example.com"
+# The deploymentlog, messagetype and pactbroker importers are each activated by the mere presence of
+# their URL property below (e.g. deploymentlog.url). POST /api/jobs (type UPDATE_MODEL) - which is also
+# how the archrepo.model.* onboarding above is applied - runs all active importers in one transaction,
+# so any of them failing (e.g. because its URL is unreachable) rolls back the whole model update.
+# There is no real deployment log / Pact broker / message contract service reachable from this example
+# environment, so their URL properties are commented out; uncomment and point them at real instances to
+# use these importers.
+#deploymentlog:
+#  username: "read"
+#  password: "your-deploymentlog-password"
+#  url: "https://your-deploymentlog-service.example.com"
 
 messages:
-  message-contract-service-uri: "https://your-message-contract-service.example.com/api/contracts"
+  #message-contract-service-uri: "https://your-message-contract-service.example.com/api/contracts" # see note above
   repositories:
     - uri: "https://github.com/jeap-admin-ch/jeap-message-type-registry.git"
       type: "GITHUB"
@@ -39,8 +46,8 @@ system-component-importer:
   org-prefixes:
     - "YOUR-ORG-"
 
-pactbroker:
-  url: "https://your-pactbroker.example.com"
+#pactbroker:
+#  url: "https://your-pactbroker.example.com" # see note above
 
 jeap:
   security:

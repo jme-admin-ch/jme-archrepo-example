@@ -27,3 +27,15 @@ jeap:
 archrepo:
   api:
     username: "jme-archrepo-admin"
+  # Systems and teams are no longer registered via the (now removed) POST /api/management/system API;
+  # since jeap-archrepo-service 18.0.0 they are declared statically through this configuration instead.
+  model:
+    teams:
+      - name: "jEAP"
+        contact-address: "jeap-community@bit.admin.ch"
+        confluence-link: "https://confluence.bit.admin.ch/display/JEAP"
+    systems:
+      - name: "JME-Archrepo-Example"
+        team: "jEAP"
+        description: "jEAP Examples"
+        confluence-link: "https://confluence.bit.admin.ch/display/JEAP"
