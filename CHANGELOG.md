@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [18.6.0] - 2026-11-10
+
+### Dependencies
+- **ch.admin.bit.jeap:jeap-oauth-mock-server**: 11.15.2 → 11.16.0 (minor)
+- **ch.admin.bit.jeap:jeap-archrepo-web**: 18.1.1 → 18.2.0 (minor)
+- **ch.admin.bit.jeap:jeap-archrepo-test**: 18.1.1 → 18.2.0 (minor)
+
 ## [18.5.0] - 2026-11-08
 
 ### Dependencies
